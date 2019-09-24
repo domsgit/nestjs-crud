@@ -13,11 +13,11 @@
     "allowJs": true,
     "outDir": "./dist"
   },
-    "include": [
+  "include": [
     "src/**/*"
   ],
-    "exclude": [
-    "node_modules",
+  "exclude": [
+    "node_modules/**",
     "**/*.spec.ts"
   ]
 }
