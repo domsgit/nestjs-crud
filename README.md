@@ -1,5 +1,7 @@
 受[nestjs-realworld-example-app](https://github.com/lujakob/nestjs-realworld-example-app)和[nestjsx/crud](https://github.com/nestjsx/crud)启发写成的通用后台管理增删改查系统。
 
+[后端服务在线预览swagger api](http://129.204.143.28:3000/docs)，前端相关项目：[vue-typescript-crud](https://github.com/domsgit/vue-typescript-crud)，[前端项目在线预览](http://129.204.143.28:4000)
+
 # 如何开始
 
 ### 1. 起一个mysql数据库服务。将数据库相关的配置改`ormconfig.json`（复制或重命名`ormconfig.json.example`文件)文件对应项。
