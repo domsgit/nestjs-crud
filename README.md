@@ -4,6 +4,16 @@
 
 # 如何开始
 
+## 一、docker-compose启动
+
+```bash
+docker-compose up -d
+```
+
+**注意：** 需要把`ormconfig.json`中的`host`设置成你电脑的ip。否则服务会关联不上mysql而导致失败。(TODO)
+
+## 二、本地启动
+
 ### 1. 起一个mysql数据库服务。将数据库相关的配置改`ormconfig.json`（复制或重命名`ormconfig.json.example`文件)文件对应项。
 
 比如，用docker启动mysql服务：

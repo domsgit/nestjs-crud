@@ -3,7 +3,20 @@ services:
   backend:
     build: .
     container_name: crud-nest
+    restart: always
     ports:
       - "3000:3000"
+  
+  db:
+    image: "mysql:5.6"
     restart: always
-
+    container_name: crud-db
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=domsgit
+      - MYSQL_DATABASE=nestcrud
+    volumes:
+        - "./mysql/datas:/var/lib/mysql"
+        - "./mysql/config/my.cnf:/etc/my.cnf"
+  
